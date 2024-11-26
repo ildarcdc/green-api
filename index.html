@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>GREEN_API TEST</title>
+    <link rel="shortcut icon" href="data/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="data/style.css" />
+  </head>
+  <body>
+    <h1>Тестовое задание</h1>
+    <div id="mainInformation">
+      <div id="inputSide">
+          <input type="text" class="element" id="idInstance" name="idInstance" placeholder="idInstance" required >
+          <div class="space"></div>
+          <input type="password" class="element" id="ApiTokenInstance" name="ApiTokenInstance" placeholder="ApiTokenInstance" required >
+          <div class="spaceTriple"></div>
+          <button class="element" id="getSettings" type="button">getSettings</button>
+          <div class="spaceDouble"></div>
+          <button class="element" id="getStateInstance" type="button">getStateInstance</button>
+          <div class="spaceTriple"></div>
+          <input type="tel" class="element" id="numberForMessage" name="numberForMessage" pattern="[0-9]{11}" placeholder="77771234567" required />
+          <div class="space"></div>
+          <textarea type="text" class="element" id="textMessage" name="textMessage" placeholder="Hello World!" required /></textarea>
+          <div class="space"></div>
+          <button class="element" id="sendMessage" type="button">sendMessage</button>
+          <div class="spaceTriple"></div>
+          <input type="tel" class="element" id="numberFileByUrl" name="numberFileByUrl" pattern="[0-9]{11}" placeholder="77771234567" required />
+          <div class="space"></div>
+          <input type="url" class="element" id="fileByUrl" name="fileByUrl" placeholder="https://my.site.com/img/horse.png" pattern="https://.*" required />
+          <div class="space"></div>
+          <button class="element" id="sendFileByUrl" type="button">sendFileByUrl</button>
+      </div>
+      <div id="answerSide">
+          <h2 class="element">Ответ:</h2>
+          <textarea type="text" class="element" id="answerMessage" name="answerMessage" placeholder="Hello World!" readonly required /></textarea>
+      </div>
+    </div>
+    <footer>
+      <script src="https://yastatic.net/jquery/3.3.1/jquery.min.js"></script>
+      <script src="./data/main.js"></script>
+    </footer>
+  </body>
+</html>
