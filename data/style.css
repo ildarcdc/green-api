@@ -1,0 +1,48 @@
+h1 {
+    text-align:center;
+}
+
+h2 {
+    text-align:left;
+}
+
+button {
+    /*! Длинна кнопки выглядит меньше, чем всего остального*/ 
+    padding: unset;
+    display: inline-flex; 
+    justify-content: center;
+}
+
+#mainInformation {
+    margin:0 auto;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    flex-direction: row;
+    height: 90%;   
+}
+
+#inputSide {
+    display: grid;
+    width: 50%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 2fr 2fr 1fr 2fr 2fr 1fr 1fr 5fr 1fr 2fr 2fr 1fr 1fr 1fr 1fr 2fr; 
+}
+
+#answerSide {
+    display: grid;
+    width: 50%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 6fr;
+    grid-row-gap: 1fr; 
+}
+
+
+#answerMessage {
+    /*! Надо изменить поведение поля */
+    overflow-wrap: break-word;
+}
+
+.element {
+    width: 95%;
+}
